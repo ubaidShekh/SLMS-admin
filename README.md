@@ -1,50 +1,279 @@
-# Welcome to your Expo app 👋
+# Smart Street Light Monitoring System (SLMS)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+An IoT-based real-time street light monitoring and maintenance platform designed for smart city infrastructure.
 
-## Get started
+The system continuously monitors street lights using ESP8266-based IoT hardware and provides live fault detection, technician task management, supervisor assignment, and real-time device tracking through a modern web dashboard and mobile application.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+# System Overview
 
-2. Start the app
+Traditional street light maintenance systems are reactive and heavily manual.
 
-   ```bash
-   npx expo start
-   ```
+SLMS automates the complete maintenance workflow:
 
-In the output, you'll find options to open the app in a
+- Street lights continuously send live device status data
+- Faults are detected automatically
+- Notifications are generated in real time
+- Supervisors can assign repair tasks
+- Technicians receive assigned tasks instantly
+- Task completion updates device repair logs automatically
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+# Key Features
 
-## Get a fresh project
+## Real-Time Device Monitoring
 
-When you're ready, run:
+Each street light continuously sends live telemetry data to the backend every second.
 
-```bash
-npm run reset-project
+Device statuses include:
+
+- Working
+- Faulty
+- Offline
+- In Progress
+
+---
+
+## Live Map-Based Device Tracking
+
+Monitor all street lights directly on an interactive map interface.
+
+Features:
+
+- Live device visualization
+- Device location tracking
+- Status-based color indicators
+- Real-time updates
+
+---
+
+## Automatic Fault Detection
+
+The system detects:
+
+- Device offline state
+- Voltage abnormalities
+- Current fluctuations
+- Electrical faults
+
+using IoT sensor data.
+
+---
+
+## Real-Time Notifications
+
+Instant alerts are generated when:
+
+- A device goes offline
+- Electrical faults occur
+- Voltage/current thresholds exceed limits
+
+Notifications are prioritized by severity.
+
+---
+
+## Technician Task Management
+
+Technicians can:
+
+- View assigned repair tasks
+- Track fault details
+- Monitor repair progress
+- Complete maintenance operations
+- Automatically update task status
+
+---
+
+## Supervisor Assignment System
+
+Administrators can:
+
+- Assign supervisors
+- Allocate maintenance tasks
+- Track repair workflows
+- Monitor device repair history
+
+---
+
+## Device Analytics Dashboard
+
+Dashboard includes:
+
+- Total light count
+- Working light count
+- Faulty light count
+- Offline device count
+- Live activity tracking
+- Device status filters
+
+---
+
+# Admin Dashboard Screenshots
+
+## Live Device Monitoring Dashboard
+
+![Dashboard](assets/screenshots/dashboard.png)
+
+---
+
+## Real-Time Notifications Panel
+
+![Notifications](assets/screenshot/notification.png)
+
+---
+
+## Add New Device Modal
+
+![Add Device](assets/screenshot/configureLight.png)
+
+---
+
+## Lidt Of device
+
+![Lights](assets/screenshot/listOfDevice.png)
+
+---
+
+## Device supervisor
+
+![supervisor](assets/screenshot/supervisorTab.png)
+
+---
+
+
+## Devic task logs
+
+![task logs](assets/screenshot/taskLog.png)
+
+---
+
+# Tech Stack
+
+## Frontend
+
+- React Native
+- Expo
+- TypeScript
+- React Navigation
+
+---
+
+## Backend
+
+- Express.js
+- MongoDB Atlas
+- REST APIs
+
+---
+
+## IoT Hardware
+
+- ESP8266
+- Voltage Sensor
+- Current Sensor
+
+---
+
+# System Architecture
+
+```txt
+Street Light Devices
+        ↓
+ESP8266 + Sensors
+        ↓
+Express.js Backend Server
+        ↓
+MongoDB Atlas
+        ↓
+Fault Detection System
+        ↓
+Notification & Task Engine
+        ↓
+Admin Dashboard + Technician Mobile App
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+# Core Modules
 
-To learn more about developing your project with Expo, look at the following resources:
+- Real-Time Monitoring
+- Fault Detection
+- Notification System
+- Task Management
+- Supervisor Assignment
+- Device Tracking
+- Analytics Dashboard
+- Repair Logs
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
+# Folder Structure
 
-Join our community of developers creating universal apps.
+```txt
+project-root/
+│
+├── app/
+├── components/
+├── services/
+├── backend/
+├── assets/screenshots/
+│
+├── package.json
+└── README.md
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+
+# Future Improvements
+
+- AI-Based Fault Prediction
+- GPS Navigation for Technicians
+- Power Consumption Analytics
+- Automatic Route Optimization
+- Predictive Maintenance
+- MQTT-Based Communication
+- WebSocket Real-Time Streaming
+- Multi-City Infrastructure Support
+
+---
+
+# Installation
+
+
+---
+
+## Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+## Start Development Server
+
+```bash
+npx expo start
+```
+
+---
+
+# Developer
+
+**Ubaid Shekh**  
+React Native Developer  
+Jamia Millia Islamia
+
+---
+
+# Project Status
+
+Active Development
+
+---
+
+# License
+
+This project is developed for educational, research, and smart infrastructure purposes.
