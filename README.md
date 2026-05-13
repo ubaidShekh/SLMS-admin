@@ -114,7 +114,7 @@ Dashboard includes:
 
 ## Live Device Monitoring Dashboard
 
-![Dashboard](assets/screenshorts/dashboard.png)
+![Dashboard](assets/screenshorts/dashboared.png)
 
 ---
 
