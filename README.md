@@ -126,26 +126,26 @@ Dashboard includes:
 
 ## Add New Device Modal
 
-![Add Device](assets/screenshot/configureLight.png)
+![Add Device](assets/screenshorts/configureLight.png)
 
 ---
 
 ## Lidt Of device
 
-![Lights](assets/screenshot/listOfDevice.png)
+![Lights](assets/screenshorts/listOfDevice.png)
 
 ---
 
 ## Device supervisor
 
-![supervisor](assets/screenshot/supervisorTab.png)
+![supervisor](assets/screenshorts/supervisorTab.png)
 
 ---
 
 
 ## Devic task logs
 
-![task logs](assets/screenshot/taskLog.png)
+![task logs](assets/screenshorts/taskLog.png)
 
 ---
 
