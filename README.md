@@ -114,13 +114,13 @@ Dashboard includes:
 
 ## Live Device Monitoring Dashboard
 
-![Dashboard](assets/screenshots/dashboard.png)
+![Dashboard](assets/screenshorts/dashboard.png)
 
 ---
 
 ## Real-Time Notifications Panel
 
-![Notifications](assets/screenshot/notification.png)
+![Notifications](assets/screenshorts/notification.png)
 
 ---
 
